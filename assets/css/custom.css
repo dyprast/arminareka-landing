@@ -1,3 +1,24 @@
+.relative{
+    position: relative;
+    width: 100%;
+}
+.bg-smart-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 180px 0;
+}
+.bg-smart{
+    background: url(../img/flat-img/backgrounds/smart-object-3.png);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
 /* HEADER STYLE */
 .main-header{
     padding: 20px 0;
@@ -72,7 +93,7 @@
 }
 .form-control.search{
     border: none;
-    font-family: "Montserrat-B";
+    font-family: "Montserrat-SB";
     font-size: 14px;
     text-transform: uppercase;
     outline: none;
@@ -88,4 +109,63 @@
     width: 19%;
     padding: 14px;
 }
+
+.distance-search-engine{
+    margin-bottom: 100px;
+}
 /* END SECTION SEARCH STYLE */
+
+
+/* SECTION BENEFIT STYLE */
+.section-header h1{
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 33px;
+    text-transform: uppercase;
+}
+.benefits{
+    margin-top: 55px;
+}
+.benefit h3{
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 16px;
+    font-family: "Montserrat-B";
+    font-weight: 800;
+}
+.benefit-flat-img{
+    width: 60px;
+    height: 60px;
+}
+.benefit-flat-img.earth{
+    background: url(../img/flat-img/icons/Earth.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.benefit-flat-img.people{
+    background: url(../img/flat-img/icons/People.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.benefit-flat-img.trusted{
+    background: url(../img/flat-img/icons/Trusted.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.benefit-flat-img.plane{
+    background: url(../img/flat-img/icons/Plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.distance-benefit{
+    margin-bottom: 170px;
+}
+/* END SECTION BENEFIT STYLE */
+
+/* ABOUT US */
+.box-about-us{
+    padding: 40px;
+    background-color: #042e6f;
+}
+/* END ABOUT US */

@@ -3,8 +3,12 @@
     font-family: "Montserrat-R";
 }
 @font-face{
-    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
     font-family: "Montserrat-B";
+}
+@font-face{
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-family: "Montserrat-SB";
 }
 @font-face{
     src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
@@ -29,6 +33,10 @@ p{
     color: #ccc;
     margin: 5px 0;
 }
+.p-bold{
+	font-weight: 800;
+	color: #eee;
+}
 
 
 .container{
@@ -42,10 +50,10 @@ p{
 	flex-wrap: wrap;
 }
 .row + .row{
-	margin-top: 15px;
+	margin-top: 55px;
 }
 [class*="col-"]{
-	padding: 0 15px;
+	padding: 0 25px;
 }
 [class*="col-"].no-pad-horizontal{
 	padding-right: 0;
@@ -142,18 +150,40 @@ p{
     align-items: center;
 }
 
+.mt-1{
+	margin-top: 10px;
+}
+.mt-2{
+	margin-top: 20px;
+}
+.mt-3{
+	margin-top: 30px;
+}
+.mt-4{
+	margin-top: 40px;
+}
+.mt-5{
+	margin-top: 50px;
+}
+
 .btn{
     padding: 8px 12px;
     border: none;
-    text-decoration: none;
+	text-decoration: none;
+	outline: none;
     color: #eee;
     text-transform: uppercase;
     border-radius: 30px;
     font-weight: 550;
-    letter-spacing: .5px;
+	letter-spacing: .5px;
+	cursor: pointer;
+	transition: .4s all;
 }
 .btn.btn-theme{
     background-color: #f0851a;
+}
+.btn.btn-theme:hover{
+    background-color: #ed7d0c;
 }
 
 
