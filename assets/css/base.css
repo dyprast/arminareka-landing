@@ -37,7 +37,13 @@ p{
 	font-weight: 800;
 	color: #eee;
 }
-
+.ct-p{
+	color: #f0851a;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
 
 .container{
 	width: 100%;
@@ -53,7 +59,7 @@ p{
 	margin-top: 55px;
 }
 [class*="col-"]{
-	padding: 0 25px;
+	padding: 10px 25px;
 }
 [class*="col-"].no-pad-horizontal{
 	padding-right: 0;
@@ -165,7 +171,12 @@ p{
 .mt-5{
 	margin-top: 50px;
 }
-
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
 .btn{
     padding: 8px 12px;
     border: none;
@@ -184,6 +195,23 @@ p{
 }
 .btn.btn-theme:hover{
     background-color: #ed7d0c;
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.card-header img{
+	width: 100%;
+}
+.card-body{
+	padding: 5px 20px 20px;
 }
 
 

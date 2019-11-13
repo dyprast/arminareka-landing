@@ -18,6 +18,9 @@
     height: 100%;
     background-repeat: no-repeat;
 }
+.custom-pd-col{
+    padding: 15px;
+}
 
 /* HEADER STYLE */
 .main-header{
@@ -41,10 +44,14 @@
 }
 .navigation li a{
     text-decoration: none;
-    font-size: 20px;
-    letter-spacing: .8px;
+    font-size: 18px;
+    letter-spacing: 1px;
     color: #eee;
     transition: .4s all ease-out;
+    position: relative;
+    padding: 7px 0;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .navigation li a:hover{
     color: #fff;
@@ -159,7 +166,7 @@
 }
 
 .distance-benefit{
-    margin-bottom: 170px;
+    margin-bottom: 120px;
 }
 /* END SECTION BENEFIT STYLE */
 
@@ -169,3 +176,72 @@
     background-color: #042e6f;
 }
 /* END ABOUT US */
+
+/* SECTION PAKET */
+.paket-category{
+    margin: 50px 0;
+}
+.paket-category-btn{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #eee;
+    color: #042e6f;
+    font-family: "Oswald-VF";
+    font-weight: 900;
+    font-size: 22px;
+    padding: 5px 0;
+    width: 100%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s all ease-out;
+}
+.paket-category-btn:hover{
+    background-color: #fff;
+}
+.paket-category-btn.active{
+    background-color: #f0851a;
+    color: #fff;
+}
+/* END SECTION PAKET */
+
+/* SECTION NEWS */
+.title-card{
+    color: #042e6f;
+    font-family: "Montserrat-R";
+    font-size: 16px;
+}
+.news-card{
+    margin: 50px 0;
+    position: relative;
+}
+.card.news{
+    border-radius: 30px;
+    cursor: pointer;
+}
+.text-card{
+    color: #7f7f7f;
+    font-size: 13px;
+    font-weight: 600;
+}
+.prev-btn{
+    position: absolute;
+    top: 180px;
+    left: -20px;
+    background-color: #f0851a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 50%;
+}
+.next-btn{
+    position: absolute;
+    top: 180px;
+    right: -20px;
+    background-color: #f0851a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 50%;
+}
+/* END SECTION NEWS */
