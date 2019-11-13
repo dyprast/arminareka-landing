@@ -1,401 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arminareka &mdash; Landing</title>
-
-    <!-- ICONS PACK -->
-    <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
-    <!-- END ICONS PACK -->
-
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <!-- END STYLESHEET -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome-5/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Beranda - Arminareka</title>
 </head>
-<body class="bg-color primary">
 
-    <!-- MAIN HEADER -->
-    <header class="main-header">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <!-- BRAND LOGO -->
-                <a href="./">
-                    <div class="brand-img">
-                        <img src="assets/img/arminareka-logo-white.png" alt="Arminareka Logo">
-                    </div>
+<body>
+    <!-- navbar -->
+    <nav class="py-5">
+        <div class="nav-container container">
+            <div class="nav-content flex items-center justify-between flex-wrap">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <img src="assets/img/arminareka-logo.png" class="nav-logo fill-current" alt="" srcset="">
+                </div>
+                <div class="block lg:hidden">
+                    <button
+                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <a href="#responsive-header"
+                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
+                        Tentang Kami
+                    </a>
+                    <a href="#responsive-header"
+                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
+                        Paket <i class="fas fa-chevron-down pl-2"></i>
+                    </a>
+                    <a href="#responsive-header"
+                        class="nav-link block mt-4 text-orange-500 hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
+                        Berita
+                    </a>
+                    <a href="#responsive-header"
+                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
+                        Galeri
+                    </a>
+                    <a href="#responsive-header"
+                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-5">
+                        Kontak Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- the end of the navbar -->
+
+    <!-- section hero -->
+    <section class="hero pt-3">
+        <div class="container flex mb-4" style="margin:0 auto">
+            <div class="w-1/2 hero-desc">
+                <h1 class="hero-title text-white text-6xl pr-3 pb-5">IS SIMPLY DUMMY TEXT OF THE DAY</h1>
+                <p class="hero-description text-white">
+                    There are many variations of passages of Lorem Ipsum available but the majority have suffered
+                </p>
+                <a href="#!" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full font-bold shadow-xl">
+                    SELENGKAPNYA
                 </a>
-                <!-- NAVBAR MENU -->
-                <nav class="navbar">
-                    <ul class="navigation">
-                        <li>
-                            <a href="">Tentang Kami</a>
-                        </li>
-                        <li>
-                            <a href="" class="d-flex align-items-center">Paket <i class="fas fa-sort-down"></i></a>
-                        </li>
-                        <li>
-                            <a href="">Berita</a>
-                        </li>
-                        <li>
-                            <a href="">Galeri</a>
-                        </li>
-                        <li>
-                            <a href="">Cek Jadwal</a>
-                        </li>
-                        <li>
-                            <a href="">Kontak Kami</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
-    <!-- END MAIN HEADER -->
-
-    <!-- BANNER SECTION -->
-    <section class="section-banner">
-        <div class="container">
-            <div class="row">
-                <div class="hero col-12 col-md-6">
-                    <div class="big-title">
-                        IS SIMPLY DUMMY TEXT OF THE DAY
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, unde vero accusantium inventore totam fugiat quae porro</p>
-                    <div class="thumb-btn">
-                        <button class="btn btn-theme">Selengkapnya</button>
-                    </div>
-                </div>
-                <div class="banner-images"></div>
+            <div class="hero-picture w-1/2 bg-gray-500">
+                <img src="assets/img/Mecca.png" alt="" srcset="" style="">
             </div>
         </div>
     </section>
-    <!-- END BANNER SECTION -->
-    <div class="distance-banner"></div>
-    <!-- SECTION SEARCH ENGINE -->
-    <section class="section-search">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="search-form">
-                        <form>
-                            <input type="text" class="form-control search" placeholder="Masukan ID Jamaah" name="">
-                            <button class="btn btn-theme search">Cari</button>
-                        </form>
+    <!-- end of section hero -->
+
+    <!-- section  posts -->
+    <section class="posts mb-12">
+        <div class="container flex mb-4" style="margin:0 auto">
+            <div class="w-1/3">
+                <div class="container-fluid">
+                    <form action="" class="form-search-category shadow-xl bg-white rounded-full py-1">
+                        <input type="text" name="" id="" class="py-3 px-6 rounded-full"
+                            placeholder="CARI BERITA">
+                        <a href="#!" class="btn-search text-white bg-orange-500 hover:bg-orange-600 rounded-full font-semibold">CARI</a>
+                    </form>
+
+                    <div class="card bg-white mt-8 rounded shadow-xl">
+                        <div class="content">
+                            <h3 class="card-title text-xl text-blue-800">Kategori</h3>
+                            <div class="py-5">
+                                <a href="#!" class="card-link text-orange-500 text-base">Semua</a>
+                                <div class="category-separator">
+                                    <span class="bar"></span>
+                                </div>
+                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Pengumuman</a>
+                                <div class="category-separator">
+                                    <span class="bar"></span>
+                                </div>
+                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Berita</a>
+                                <div class="category-separator">
+                                    <span class="bar"></span>
+                                </div>
+                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Kegiatan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-white mt-12 mb-8 rounded shadow-xl">
+                        <div class="content">
+                            <h3 class="card-title text-xl text-blue-800 pb-6">Top Post</h3>
+
+                            <div class="post-item">
+                                <div class="flex">
+                                    <h1
+                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
+                                        1</h1>
+                                    <div class="flex-auto">
+                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
+                                            dolorem ipsum quia</a>
+                                        <p class="text-orange-600 text-xs text-montserrat pt-3">PENGUMUMAN - DES 25,
+                                            2019</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-item mt-5">
+                                <div class="flex">
+                                    <h1
+                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
+                                        2</h1>
+                                    <div class="flex-auto">
+                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
+                                            dolorem ipsum quia</a>
+                                        <p class="text-orange-600 text-xs text-montserrat pt-3">KEGIATAN - DES 28, 2019
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-item mt-5">
+                                <div class="flex">
+                                    <h1
+                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
+                                        3</h1>
+                                    <div class="flex-auto">
+                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
+                                            dolorem ipsum quia</a>
+                                        <p class="text-orange-600 text-xs text-montserrat pt-3">PENGUMUMAN - DES 30,
+                                            2019</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-item mt-5">
+                                <div class="flex">
+                                    <h1
+                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
+                                        4</h1>
+                                    <div class="flex-auto">
+                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
+                                            dolorem ipsum quia</a>
+                                        <p class="text-orange-600 text-xs text-montserrat pt-3">BERITA - DES 15, 2019
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-item mt-5">
+                                <div class="flex">
+                                    <h1
+                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
+                                        5</h1>
+                                    <div class="flex-auto">
+                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
+                                            dolorem ipsum quia</a>
+                                        <p class="text-orange-600 text-xs text-montserrat pt-3">BERITA - DES 26, 2019
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="search-form">
-                        <form>
-                            <input type="text" class="form-control search" placeholder="Nama Paket" name="">
-                            <button class="btn btn-theme search">Cari</button>
-                        </form>
+            </div>
+            <div class="w-2/3">
+                <div class="flex px-8">
+                    <div class="w-1/2">
+                        <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-8 w-1/2">
+                        <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!--  -->
+                <div class="flex px-8 mt-8">
+                    <div class="w-1/2">
+                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-8 w-1/2">
+                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="flex px-8 mt-8 mb-8">
+                    <div class="w-1/2">
+                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-8 w-1/2">
+                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
+                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                            <div class="px-6 py-3">
+                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                    dolorem ipsum quia</a>
+                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incidudunt ut labore et doloe aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <div class="ml-8 mt-12 mb-8 flex pagination">
+                    <a href="#!" class="pagination-link bg-orange-600 text-white text-oswald-bold text-lg">
+                        1
+                    </a>
+                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
+                        2
+                    </a>
+                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
+                        3
+                    </a>
+                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
+                        4
+                    </a>
+                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
+                        >
+                    </a>
+                </div>
+                <!-- end of pagination -->
             </div>
         </div>
     </section>
-    <!-- END SECTION SEARCH ENGINE -->
-    <div class="distance-search-engine"></div>
+    <!-- end of section posts -->
 
-    <div class="relative">
-        <div class="bg-smart-wrapper">
-            <div class="bg-smart"></div>
-        </div>
-        <div class="bg-smart-wrapper-2">
-            <div class="bg-smart-2"></div>
-        </div>
-        <!-- SECTION BENEFIT -->
-        <section class="section-benefit">
-            <div class="container">
-                <div class="section-header">
-                    <h1>Benefit</h1>
-                    <p>Kemudahan & keuntungan dalam kerjasama dengan Arminareka</p>
+    <!-- this is the footer -->
+    <footer class="pt-12 pb-8">
+        <div class="container pt-4">
+            <div class="footer-top flex pb-8">
+                <div class="w-1/2" style="padding-right: 16rem;">
+                    <img src="assets/img/arminareka-logo.png" alt="" srcset="">
+                    <h3 class="text-blue-900 font-bold mt-8 mb-4 text-sm text-montserrat-semibold">PT. ARMINAREKA PERDANA (PUSAT)</h3>
+                    <p class="text-montserrat text-blue-800 text-sm pr-8">
+                        GEDUNG MENARA SALEMBA LT.5 JALAN SALEMBA RAYA NO.5 JAKARTA PUSAT 10440 - SALEMBA
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="empty-space col-12 col-md-2"></div>
-                    <div class="benefits col-12 col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="benefit">
-                                    <div class="benefit-flat-img earth"></div>
-                                    <div class="mt-2">
-                                        <h3>Travel Umroh dan Haji Terbesar di Indonesia</h3>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p>Telah memberangkatkan 50.000+ Jamaah Umroh/tahun dan 1.000+ Jamaah Haji Plus/tahun.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="benefit">
-                                    <div class="benefit-flat-img people"></div>
-                                    <div class="mt-2">
-                                        <h3>Embarkasi Terbanyak di Indonesia</h3>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p>Pemberangkatan di beberapa kota besar di Indonesia dengan menggunakan maskapai terbaik nasional.</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="w-1/2">
+                    <div class="flex">
+                        <div class="w-1/3 flex flex-col">
+                            <a href="#!" class="text-blue-900 text-montserrat-semibold text-sm">HOME</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">TENTANG KAMI</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">PAKET</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">BERITA</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">GALERI</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">KONTAK KAMI</a>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="benefit">
-                                    <div class="benefit-flat-img trusted"></div>
-                                    <div class="mt-2">
-                                        <h3>Sudah Terpecaya Sejak 1990</h3>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p>Berdiri sejak tahun 1990 dan beraviliasi dengan organisasi yang terpercaya.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="benefit">
-                                    <div class="benefit-flat-img plane"></div>
-                                    <div class="mt-2">
-                                        <h3>Penerbangan Hampir Setiap Hari</h3>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p>Jadwal pemberangkatan fleksibel dan tersedia hampir setiap hari.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="w-2/3 flex flex-col">
+                            <a href="#!" class="text-blue-900 text-montserrat-semibold text-sm">DAFTAR ONLINE</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CARA PENDAFTARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">KONFIRMASI PEMBAYARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEBERANGKATAN & PEMBAYARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEB. HAJI PLUS & NO PORSI</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">REKENING PT. ARMINAREKA PERDANA</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">FAQ</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">SYARAT & KETENTUAN</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- END SECTION BENEFIT -->
-        <div class="distance-benefit"></div>
-        <!-- SECTION ABOUT US -->
-        <section class="section-about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="empty-space col-12 col-md-6"></div>
-                    <div class="box-about-us col-12 col-md-6">
-                        <div class="section-header">
-                            <h1>Tentang Arminareka</h1>
-                            <p>Profil/ Sejarah perusahaan Arminareka</p>
-                        </div>
-                        <div class="mt-5">
-                            <p><b class="p-bold">Lorem, ipsum</b> dolor sit amet consectetur adipisicing elit. Tempore optio consequatur soluta autem ex vero magni, perspiciatis nulla, mollitia voluptatum reiciendis incidunt corrupti hic. Expedita laborum dicta placeat nam. Similique.</p>
-                        </div>
-                        <div class="mt-2">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore optio consequatur soluta autem ex vero magni, perspiciatis nulla, mollitia voluptatum reiciendis incidunt corrupti hic.</p>
-                        </div>
-                        <div class="mt-2">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore optio consequatur soluta autem ex vero magni, perspiciatis nulla, mollitia voluptatum reiciendis incidunt corrupti hic.</p>
-                        </div>
-                        <div class="mt-2">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore optio consequatur soluta autem ex vero magni, perspiciatis nulla, mollitia voluptatum reiciendis incidunt corrupti hic.</p>
-                        </div>
-                        <div class="thumb-btn">
-                            <button class="btn btn-theme">Selengkapnya</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END SECTION ABOUT US -->
-        </section>
-    </div>
+            <div class="footer-bottom flex pt-8 pb-4">
+                <div class="w-1/2">
+                    <div class="flex flex-col">
+                        <h1 class="text-blue-900 text-lg text-montserrat-semibold">Informasi Pendaftaran</h1>
+                        <h1 class="text-white text-3xl text-montserrat-semibold">CALL 0878 - 9000 - 8810</h1>
 
-    <!-- SECTION PAKET -->
-    <section class="section-paket mt-50">
-        <div class="container">
-            <div class="section-header">
-                <h1>Paket</h1>
-                <p>Layanan paket Umroh & Haji</p>
-            </div>
-            <div class="paket-category">
-                <div class="row">
-                    <div class="col-6 col-md-3">
-                        <button class="paket-category-btn active">Umrah</button>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <button class="paket-category-btn">Umrah Plus</button>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <button class="paket-category-btn">Haji Plus</button>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <button class="paket-category-btn">Wisata Halal</button>
-                    </div>
-                </div>
-            </div>
-            <div class="paket-card">
-                <div class="row">
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <div class="card-header"></div>
+                        <div class="flex mt-8">
+                            <a href="#!" class="w-8 h-8 flex justify-center align-center text-blue-900">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#!" class="w-8 h-8 flex justify-center align-center text-blue-900">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#!" class="w-8 h-8 flex justify-center align-center text-blue-900">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#!" class="w-8 h-8 flex justify-center align-center text-blue-900">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SECTION PAKET -->
 
-    <!-- SECTION NEWS -->
-    <section class="section-news">
-        <div class="container">
-            <div class="section-header">
-                <h1>Berita</h1>
-                <p>Informasi terupdate Umroh & Haji</p>
-            </div>
-            <div class="news-card">
-                <div class="row">
-                    <div class="col-12 col-md-3 custom-pd-col">
-                        <div class="card news">
-                            <div class="card-header">
-                                <img src="assets/img/Layer 15.png" alt="News Title">
-                            </div>
-                            <div class="card-body">
-                                <div>
-                                    <p class="ct-p">Pengumuman</p>
-                                    <h3 class="title-card">Neque porro quis quam est qui dolorem ipsum qula</h3>
-                                </div>
-                                <div class="mt-2">
-                                    <p class="text-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maxime optio dignissimos...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 custom-pd-col">
-                        <div class="card news">
-                            <div class="card-header">
-                                <img src="assets/img/Layer 15.png" alt="News Title">
-                            </div>
-                            <div class="card-body">
-                                <div>
-                                    <p class="ct-p">Pengumuman</p>
-                                    <h3 class="title-card">Neque porro quis quam est qui dolorem ipsum qula</h3>
-                                </div>
-                                <div class="mt-2">
-                                    <p class="text-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maxime optio dignissimos...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 custom-pd-col">
-                        <div class="card news">
-                            <div class="card-header">
-                                <img src="assets/img/Layer 15.png" alt="News Title">
-                            </div>
-                            <div class="card-body">
-                                <div>
-                                    <p class="ct-p">Pengumuman</p>
-                                    <h3 class="title-card">Neque porro quis quam est qui dolorem ipsum qula</h3>
-                                </div>
-                                <div class="mt-2">
-                                    <p class="text-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maxime optio dignissimos...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 custom-pd-col">
-                        <div class="card news">
-                            <div class="card-header">
-                                <img src="assets/img/Layer 15.png" alt="News Title">
-                            </div>
-                            <div class="card-body">
-                                <div>
-                                    <p class="ct-p">Pengumuman</p>
-                                    <h3 class="title-card">Neque porro quis quam est qui dolorem ipsum qula</h3>
-                                </div>
-                                <div class="mt-2">
-                                    <p class="text-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maxime optio dignissimos...</p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <a href="" class="prev-btn news"><i class="fas fa-chevron-left"></i></a>
-                <a href="" class="next-btn news"><i class="fas fa-chevron-right"></i></a>
-                <div class="mt-5 text-right">
-                    <button class="btn btn-theme">Selengkapnya</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SECTION NEWS -->
+                <div class="w-1/2">
+                    <h1 class="text-blue-900 text-lg text-montserrat-semibold">BANK TRANSFER</h1>
 
-    <!-- SECTION TESTIMONI -->
-    <section class="section-testimoni">
-        <div class="container">
-            <div class="section-header">
-                <h1>Testimoni</h1>
-                <p>Sepatah kata dari peserta Umroh & Haji</p>
-            </div>
-        </div>
-        <div class="testimoni">
-            <div class="container">
-                <div class="row">
-                    <div class="col-1 d-flex align-items-center justify-content-center">
-                        <a href="" class="prev-btn"><i class="fas fa-chevron-left"></i></a>
+                    <div class="flex py-3 mb-12">
+                        <img src="assets/img/BCA.png" alt="" srcset="" class="h-6">
+                        <img src="assets/img/mandiri_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
+                        <img src="assets/img/mandiri_syariah_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
+                        <img src="assets/img/bni_logo_monochrome.png" alt="" srcset="" class="h-6 pl-3">
+                        <img src="assets/img/bri_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
                     </div>
-                    <div class="col-10">
-                        <div class="testimoni-content">
-                            <h1 class="fas fa-quote-left"></h1>
-                            <div class="testimoni-text-content">
-                                <p class="mt-3 p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias sed ipsum dignissimos inventore tempora eveniet saepe veritatis dolore sapiente animi, et, consequatur accusamus qui. Voluptatibus debitis eveniet laboriosam! Sed!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos vitae necessitatibus, sapiente dolorem minima! Eaque suscipit, atque exercitationem, illum inventore magni nulla, labore earum quo id modi delectus. Rem.</p>
-                                <p class="mt-3 ct-p">Ustadz Babe Haikal</p>
-                            </div>
-                            <div class="testimoni-img-content">
-                                <img src="assets/img/Layer 15.png" alt="Peserta Umrah dan Haji">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 d-flex align-items-center justify-content-center">
-                        <a href="" class="next-btn"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SECTION TESTIMONI -->
 
-    <!-- SECTION MITRA -->
-    <section class="section-mitra">
-        <div class="container">
-            <div class="section-header">
-                <h1>Mitra Kami</h1>
-                <p>Perusahaan yang berkerja sama dengan Arminareka</p>
-            </div>
-            <div class="mitra">
-                <div class="row no-wrap">
-                    <div class="mitra-wrap">
-                        <div class="mitra-logo">
-                            <img src="assets/img/mitra/bca.png" alt="Bank BCA">
-                        </div>
-                    </div>
-                    <div class="mitra-wrap">
-                        <div class="mitra-logo">
-                            <img src="assets/img/mitra/mandiri.png" alt="Bank Mandiri">
-                        </div>
-                    </div>
-                    <div class="mitra-wrap">
-                        <div class="mitra-logo">
-                            <img src="assets/img/mitra/mandiri-syariah.png" alt="Bank Mandiri Syariah">
-                        </div>
-                    </div>
-                    <div class="mitra-wrap">
-                        <div class="mitra-logo">
-                            <img src="assets/img/mitra/bni.png" alt="Bank BNI">
-                        </div>
-                    </div>
-                    <div class="mitra-wrap">
-                        <div class="mitra-logo">
-                            <img src="assets/img/mitra/bri.png" alt="Bank BRI">
-                        </div>
-                    </div>
+                    <h1 class="text-blue-900 text-base text-montserrat-semibold">COPYRIGHT &copy; 1990 - 2019 - PT. ARMINAREKA PERDANA</h1>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END SECTION MITRA -->
+    </footer>
+    <!-- end of footer -->
 </body>
+
 </html>
