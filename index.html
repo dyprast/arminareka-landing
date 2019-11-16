@@ -19,16 +19,13 @@
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <img src="assets/img/arminareka-logo.png" class="nav-logo fill-current" alt="" srcset="">
                 </div>
-                <div class="block lg:hidden">
+                <div class="block lg:hidden md:block">
                     <button
-                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
+                        class="flex items-center px-3 py-2 rounded text-teal-200 border-teal-400 hover:text-white">
+                        <i class="fas fa-stream"></i>
                     </button>
                 </div>
-                <div>
+                <div class="lg:block md:hidden sm:hidden">
                     <a href="#responsive-header"
                         class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Tentang Kami
@@ -58,7 +55,7 @@
     <!-- section hero -->
     <section class="hero pt-3">
         <div class="container flex mb-4" style="margin:0 auto">
-            <div class="w-1/2 hero-desc">
+            <div class="lg:w-1/2 md:w-2/2 hero-desc">
                 <h1 class="hero-title text-white text-6xl pr-3 pb-5">IS SIMPLY DUMMY TEXT OF THE DAY</h1>
                 <p class="hero-description text-white">
                     There are many variations of passages of Lorem Ipsum available but the majority have suffered
@@ -67,254 +64,1053 @@
                     SELENGKAPNYA
                 </a>
             </div>
-            <div class="hero-picture w-1/2 bg-gray-500">
+            <div class="hero-picture absolute md:hidden lg:block">
                 <img src="assets/img/Mecca.png" alt="" srcset="" style="">
             </div>
         </div>
     </section>
     <!-- end of section hero -->
 
-    <!-- section  posts -->
-    <section class="posts mb-12">
-        <div class="container flex mb-4" style="margin:0 auto">
-            <div class="w-1/3">
-                <div class="container-fluid">
-                    <form action="" class="form-search-category shadow-xl bg-white rounded-full py-1">
-                        <input type="text" name="" id="" class="py-3 px-6 rounded-full"
-                            placeholder="CARI BERITA">
-                        <a href="#!" class="btn-search text-white bg-orange-500 hover:bg-orange-600 rounded-full font-semibold">CARI</a>
-                    </form>
-
-                    <div class="card bg-white mt-8 rounded shadow-xl">
-                        <div class="content">
-                            <h3 class="card-title text-xl text-blue-800">Kategori</h3>
-                            <div class="py-5">
-                                <a href="#!" class="card-link text-orange-500 text-base">Semua</a>
-                                <div class="category-separator">
-                                    <span class="bar"></span>
-                                </div>
-                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Pengumuman</a>
-                                <div class="category-separator">
-                                    <span class="bar"></span>
-                                </div>
-                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Berita</a>
-                                <div class="category-separator">
-                                    <span class="bar"></span>
-                                </div>
-                                <a href="#!" class="card-link text-gray-500 hover:text-blue-800 text-base">Kegiatan</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-white mt-12 mb-8 rounded shadow-xl">
-                        <div class="content">
-                            <h3 class="card-title text-xl text-blue-800 pb-6">Top Post</h3>
-
-                            <div class="post-item">
-                                <div class="flex">
-                                    <h1
-                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
-                                        1</h1>
-                                    <div class="flex-auto">
-                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
-                                            dolorem ipsum quia</a>
-                                        <p class="text-orange-600 text-xs text-montserrat pt-3">PENGUMUMAN - DES 25,
-                                            2019</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post-item mt-5">
-                                <div class="flex">
-                                    <h1
-                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
-                                        2</h1>
-                                    <div class="flex-auto">
-                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
-                                            dolorem ipsum quia</a>
-                                        <p class="text-orange-600 text-xs text-montserrat pt-3">KEGIATAN - DES 28, 2019
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post-item mt-5">
-                                <div class="flex">
-                                    <h1
-                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
-                                        3</h1>
-                                    <div class="flex-auto">
-                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
-                                            dolorem ipsum quia</a>
-                                        <p class="text-orange-600 text-xs text-montserrat pt-3">PENGUMUMAN - DES 30,
-                                            2019</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post-item mt-5">
-                                <div class="flex">
-                                    <h1
-                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
-                                        4</h1>
-                                    <div class="flex-auto">
-                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
-                                            dolorem ipsum quia</a>
-                                        <p class="text-orange-600 text-xs text-montserrat pt-3">BERITA - DES 15, 2019
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post-item mt-5">
-                                <div class="flex">
-                                    <h1
-                                        class="card-title flex-auto text-blue-800 text-2xl font-bold pr-5 text-montserrat-bold">
-                                        5</h1>
-                                    <div class="flex-auto">
-                                        <a href="#!" class="text-blue-800 hover:text-blue-900 font-bold text-base">Neque porro quisquam est qui
-                                            dolorem ipsum quia</a>
-                                        <p class="text-orange-600 text-xs text-montserrat pt-3">BERITA - DES 26, 2019
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- SECTION SEARCH ENGINE -->
+    <section class="search-engine mt-24 mb-24">
+        <div class="container flex mb-4" style="margin: 0 auto">
+            <div class="w-1/2 mr-5">
+                <form action="" class="form-search-category shadow-xl bg-white rounded-full py-1">
+                    <input type="text" name="" id="" class="py-3 px-6 rounded-full"
+                        placeholder="MASUKAN ID JAMAAH">
+                    <button type="submit" class="btn-search text-white bg-orange-500 hover:bg-orange-600 rounded-full font-semibold">CARI</button>
+                </form>
             </div>
-            <div class="w-2/3">
-                <div class="flex px-8">
-                    <div class="w-1/2">
-                        <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ml-8 w-1/2">
-                        <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="flex px-8 mt-8">
-                    <div class="w-1/2">
-                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ml-8 w-1/2">
-                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="flex px-8 mt-8 mb-8">
-                    <div class="w-1/2">
-                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ml-8 w-1/2">
-                        <div class="max-w-sm shadow-xl card-round rounded overflow-hidden shadow-xl bg-white">
-                            <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
-                            <div class="px-6 py-3">
-                                <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
-                                <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
-                                    dolorem ipsum quia</a>
-                                <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incidudunt ut labore et doloe aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- pagination -->
-                <div class="ml-8 mt-12 mb-8 flex pagination">
-                    <a href="#!" class="pagination-link bg-orange-600 text-white text-oswald-bold text-lg">
-                        1
-                    </a>
-                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
-                        2
-                    </a>
-                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
-                        3
-                    </a>
-                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
-                        4
-                    </a>
-                    <a href="#!" class="pagination-link text-white hover:bg-orange-500 text-oswald-bold text-lg">
-                        >
-                    </a>
-                </div>
-                <!-- end of pagination -->
+            <div class="w-1/2 ml-5">
+                <form action="" class="form-search-category shadow-xl bg-white rounded-full py-1">
+                    <input type="text" name="" id="" class="py-3 px-6 rounded-full"
+                        placeholder="NAMA PAKET">
+                    <button type="submit" class="btn-search text-white bg-orange-500 hover:bg-orange-600 rounded-full font-semibold">CARI</button>
+                </form>
             </div>
         </div>
     </section>
-    <!-- end of section posts -->
+    <!-- END SECTION SEARCH ENGINE -->
+
+    <div class="relative">
+        <div class="bg-smart-wrapper sm:hidden md:hidden lg:block">
+            <div class="bg-smart"></div>
+        </div>
+        <!-- SECTION BENEFITS -->
+        <section class="benefits mt-24">
+            <div class="container mb-4">
+                <h1 class="text-white text-oswald-semibold text-4xl">BENEFIT</h1>
+                <p class="mt-2 text-grey-p theme-description">Kemudahan & keuntungan dalam kerjasama dengan Arminareka</p>
+            </div>
+            <div class="container flex mb-4" style="margin: 0 auto">
+                <div class="w-1/4 md:hidden lg:block"></div>
+                <div class="w-3/3 mt-16 md:mt-10">
+                    <div class="flex">
+                        <div class="benefit-content mx-10 w-1/2">
+                            <div class="benefit-img earth mb-10"></div>
+                            <h2 class="text-grey-h text-montserrat-bold font-bold text-xl">TRAVEL UMROH DAN HAJI TERBESAR DI INDONESIA</h2>
+                            <p class="mt-6 text-grey-p theme-description">Telah memberangkatkan 50.000+ Jamaah Umroh/tahun dan 1.000+ Jamaah Haji Plus/tahun.</p>
+                        </div>
+                        <div class="benefit-content mx-10 w-1/2">
+                            <div class="benefit-img people mb-10"></div>
+                            <h2 class="text-grey-h text-montserrat-bold font-bold text-xl">EMBARKASI TERBANYAK DI INDONESIA</h2>
+                            <p class="mt-6 text-grey-p theme-description">Pemberangkatan di beberapa kota besar di Indonesia dengan menggunakan maskapai terbaik nasional.</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="benefit-content mx-10 w-1/2">
+                            <div class="benefit-img trusted mb-10"></div>
+                            <h2 class="text-grey-h text-montserrat-bold font-bold text-xl">SUDAH TERPECAYA SEJAK 1990</h2>
+                            <p class="mt-6 text-grey-p theme-description">Berdiri sejak tahun 1990 dan beraviliasi dengan organisasi yang terpercaya.</p>
+                        </div>
+                        <div class="benefit-content mx-10 w-1/2">
+                            <div class="benefit-img plane mb-10"></div>
+                            <h2 class="text-grey-h text-montserrat-bold font-bold text-xl">PENERBANGAN HAMPIR SETIAP HARI</h2>
+                            <p class="mt-6 text-grey-p theme-description">Jadwal pemberangkatan fleksibel dan tersedia hampir setiap hari.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION BENEFITS -->
+
+        <!-- SECTION ABOUT US -->
+        <section class="about-us md:mt-2 lg:mt-12 md:mb-2 lg:mb-24">
+            <div class="container flex mb-4" style="margin: 0 auto">
+                <div class="w-2/5 md:hidden lg:block"></div>
+                <div class="md:w-4/4 lg:w-3/4">
+                    <div class="card bg-theme box-about-us border-radius-flat md:px-0 md:mt-0 lg:mt-32 mb-8 md:ml-0 lg:ml-40">
+                        <div class="content">
+                            <h1 class="text-white text-oswald-semibold text-4xl">TENTANG ARMINAREKA</h1>
+                            <p class="text-grey-p mt-2 theme-description">Profil/ Sejarah perusahaan Arminareka</p>
+                            <div>
+                                <p class="text-white text-grey-p"><b class="text-white">Lorem ipsum</b> dolor sit amet consectetur, adipisicing elit. Magnam cum deserunt atque cupiditate dolor in labore earum, consequuntur dolorum commodi cumque optio recusandae beatae. Saepe, ducimus quidem? Nam, officia sunt.</p>
+                                <p class="text-white text-grey-p mt-5"><b class="text-white">Lorem ipsum</b> dolor sit amet consectetur, adipisicing elit. Magnam cum deserunt atque cupiditate dolor in labore earum,</p>
+                                <p class="text-white text-grey-p mt-5"><b class="text-white">Lorem ipsum</b> dolor sit amet consectetur, adipisicing elit. Magnam cum deserunt atque cupiditate dolor in labore earum, consequuntur dolorum commodi cumque optio recusandae beatae. Saepe, ducimus quidem? Nam, officia sunt.</p>
+                            </div>
+                            <div class="mt-16">
+                                <a href="#!" class="mt-24 bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full font-bold shadow-xl">
+                                    SELENGKAPNYA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION ABOUT US -->
+    </div>
+
+    <!-- SECTION PAKET -->
+    <section class="paket mb-24">
+        <div class="container">
+            <h1 class="text-white text-oswald-semibold text-4xl">PAKET</h1>
+            <p class="mt-2 text-grey-p theme-description">Layanan paket Umroh & Haji</p>
+        </div>
+        <div class="container flex">
+            <div class="w-1/4 mx-3 my-8">
+                <button class="paket-category-btn active">Umrah</button>
+            </div>
+            <div class="w-1/4 mx-3 my-8">
+                <button class="paket-category-btn">Umrah Plus</button>
+            </div>
+            <div class="w-1/4 mx-3 my-8">
+                <button class="paket-category-btn">Haji Plus</button>
+            </div>
+            <div class="w-1/4 mx-3 my-8">
+                <button class="paket-category-btn">Wisata Halal</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mx--30 flex flex-wrap">
+                <div class="md:w-1/2 lg:w-1/4 md:mb-5 lg:mb-0 md:px-5 lg:px-10">
+                    <div class="max-w-sm relative shadow-lg card-round rounded shadow-xl bg-white">
+                        <div class="card-header paket absolute blue mb-24">
+                            <div class="paket-header flex flex-col mt-10 mx-10">
+                                <h1 class="text-white text-montserrat-bold text-3xl tracking-wider">JAKARTA</h1>
+                                <p class="text-white text-montserrat text-2xl tracking-wide mt--10">9 Hari</p>
+                            </div>
+                            <div class="flex justify-center align-center mt-5 mx-4">
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-64 px-6 py-3">
+                            <div class="flex">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-plane"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Jakarta -&nbsp; Jeddah</h3>
+                                    <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                        Garuda Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-building"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Mekkah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Marwah Rotana
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Hilton Suite
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Swiss Al Maqam
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Madinah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Dallah Taibah
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Roudah Royal Inn
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Al Haram
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-calendar-alt"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Low Season</h3>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Oct
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">19, 26, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Nov
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">6, 7, 9, 10, 11, 14, 17, 20, 21, 23, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Dec
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">2, 5, 7, 11, 12, 14</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 lg:w-1/4 md:mb-5 lg:mb-0 md:px-5 lg:px-10">
+                    <div class="max-w-sm relative shadow-lg card-round rounded shadow-xl bg-white">
+                        <div class="card-header paket absolute blue mb-24">
+                            <div class="paket-header flex flex-col mt-10 mx-10">
+                                <h1 class="text-white text-montserrat-bold text-3xl tracking-wider">JAKARTA</h1>
+                                <p class="text-white text-montserrat text-2xl tracking-wide mt--10">9 Hari</p>
+                            </div>
+                            <div class="flex justify-center align-center mt-5 mx-4">
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-64 px-6 py-3">
+                            <div class="flex">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-plane"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Jakarta -&nbsp; Jeddah</h3>
+                                    <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                        Garuda Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-building"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Mekkah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Marwah Rotana
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Hilton Suite
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Swiss Al Maqam
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Madinah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Dallah Taibah
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Roudah Royal Inn
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Al Haram
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-calendar-alt"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Low Season</h3>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Oct
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">19, 26, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Nov
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">6, 7, 9, 10, 11, 14, 17, 20, 21, 23, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Dec
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">2, 5, 7, 11, 12, 14</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 lg:w-1/4 md:mb-5 lg:mb-0 md:px-5 lg:px-10">
+                    <div class="max-w-sm relative shadow-lg card-round rounded shadow-xl bg-white">
+                        <div class="card-header paket absolute red mb-24">
+                            <div class="paket-header flex flex-col mt-10 mx-10">
+                                <h1 class="text-white text-montserrat-bold text-3xl tracking-wider">JAKARTA</h1>
+                                <p class="text-white text-montserrat text-2xl tracking-wide mt--10">9 Hari</p>
+                            </div>
+                            <div class="flex justify-center align-center mt-5 mx-4">
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-64 px-6 py-3">
+                            <div class="flex">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-plane"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Jakarta -&nbsp; Jeddah</h3>
+                                    <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                        Garuda Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-building"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Mekkah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Marwah Rotana
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Hilton Suite
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Swiss Al Maqam
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Madinah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Dallah Taibah
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Roudah Royal Inn
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Al Haram
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-calendar-alt"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Low Season</h3>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Oct
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">19, 26, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Nov
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">6, 7, 9, 10, 11, 14, 17, 20, 21, 23, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Dec
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">2, 5, 7, 11, 12, 14</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 lg:w-1/4 md:mb-5 lg:mb-0 md:px-5 lg:px-10">
+                    <div class="max-w-sm relative shadow-lg card-round rounded shadow-xl bg-white">
+                        <div class="card-header paket absolute red mb-24">
+                            <div class="paket-header flex flex-col mt-10 mx-10">
+                                <h1 class="text-white text-montserrat-bold text-3xl tracking-wider">JAKARTA</h1>
+                                <p class="text-white text-montserrat text-2xl tracking-wide mt--10">9 Hari</p>
+                            </div>
+                            <div class="flex justify-center align-center mt-5 mx-4">
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center border-right-line-thin">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <h3 class="text-white text-montserrat-bold text-sm">Quad</h3>
+                                    <h3 class="flex justify-center align-center text-white text-montserrat-bold text-3xl tracking-wide">26<span class="text-white text-sm ml-1">Jt</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-64 px-6 py-3">
+                            <div class="flex">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-plane"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Jakarta -&nbsp; Jeddah</h3>
+                                    <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                        Garuda Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-building"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Mekkah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Marwah Rotana
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Hilton Suite
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Swiss Al Maqam
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Madinah</h3>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Dallah Taibah
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Roudah Royal Inn
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-2/3">
+                                                <p class="paragraph text-gray-500 text-xs text-montserrat-semibold text-xs">
+                                                    Al Haram
+                                                </p>
+                                            </div>
+                                            <div class="w-1/3">
+                                                <div class="flex">
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star active"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                    <i class="fas fa-star hotel-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-5">
+                                <div class="w-1/6">
+                                    <h1 class="fas fa-calendar-alt"></h1>
+                                </div>
+                                <div class="w-5/6">
+                                    <div>
+                                        <h3 class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-sm">Low Season</h3>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Oct
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">19, 26, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Nov
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">6, 7, 9, 10, 11, 14, 17, 20, 21, 23, 30</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-1/4 border-right-line">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">
+                                                    Dec
+                                                </p>
+                                            </div>
+                                            <div class="w-3/4 pl-3">
+                                                <p class="paragraph text-blue-800 text-xs text-montserrat-semibold text-sm">2, 5, 7, 11, 12, 14</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION PAKET -->
+
+    <!-- SECTION BERITA -->
+    <section class="berita">
+        <div class="container">
+            <h1 class="text-white text-oswald-semibold text-4xl">BERITA</h1>
+            <p class="mt-2 text-grey-p theme-description">Informasi terupdate Umroh & Haji</p>
+        </div>
+        <div class="container relative">
+            <div class="flex flex-wrap mb-10">
+                <div class="lg:pl-5 md:px-3 md:py-3 lg:w-1/4 md:w-2/4">
+                    <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                        <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-3">
+                            <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                            <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                dolorem ipsum quia</a>
+                            <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incidudunt ut labore et doloe aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-5 md:px-3 md:py-3 lg:w-1/4 md:w-2/4">
+                    <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                        <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-3">
+                            <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                            <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                dolorem ipsum quia</a>
+                            <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incidudunt ut labore et doloe aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-5 md:px-3 md:py-3 lg:w-1/4 md:w-2/4">
+                    <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                        <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-3">
+                            <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                            <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                dolorem ipsum quia</a>
+                            <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incidudunt ut labore et doloe aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-5 md:px-3 md:py-3 lg:w-1/4 md:w-2/4">
+                    <div class="max-w-sm shadow-lg card-round rounded overflow-hidden shadow-xl bg-white">
+                        <img class="w-full" src="assets/img/Kaaba.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-3">
+                            <p class="text-orange-500 text-xs text-montserrat pt-1 pb-1">PENGUMUMAN</p>
+                            <a href="#!" class="text-blue-800 hover:text-blue-900 text-montserrat-bold text-lg">Neque porro quisquam est qui
+                                dolorem ipsum quia</a>
+                            <p class="paragraph mt-5 pb-4 text-gray-500 text-xs text-montserrat-semibold">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incidudunt ut labore et doloe aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-16 text-right">
+                <a href="#!" class="mt-24 bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full font-bold shadow-xl">
+                    SELENGKAPNYA
+                </a>
+            </div>
+            <div class="absolute-wrapper prev lg:block md:hidden">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="absolute-wrapper next lg:block md:hidden">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION BERITA -->
+
+    <!-- SECTION TESTIMONI -->
+    <section class="testimoni">
+        <div class="container">
+            <h1 class="text-white text-oswald-semibold text-4xl">TESTIMONI</h1>
+            <p class="mt-2 text-grey-p theme-description">Sepatah kata dari peserta Umroh & Haji</p>
+        </div>
+        <div class="bg-gray-300">
+            <div class="container relative flex">
+                <div class="w-1/10 mr-10">
+                    <div class="next-prev-wrapper">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-8/10 relative py-20">
+                    <div class="testimoni-content text-center">
+                        <h1 class="text-black text-4xl"><i class="fas fa-quote-left"></i></h1>
+                        <p class="mt-5 testimoni-text-p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at eum nemo ipsa eligendi sunt velit corrupti quis sint, optio aliquam aliquid laboriosam ipsam illum vero officia quasi, nihil libero?
+                        </p>
+                        <p class="text-orange-500 font-bold mt-10">USTADZ BABE HAIKAL</p>
+                    </div>
+                    <div class="testimoni-img-people">
+                        <img src="assets/img/people/haikal-hassan.jpg" alt="USTADZ BABE HAIKAL">
+                    </div>
+                </div>
+                <div class="w-1/10 ml-10">
+                    <div class="next-prev-wrapper">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-full">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION TESTIMONI -->
+
+    <!-- SECTION MITRA -->
+    <section class="mitra mt-24">
+        <div class="container">
+            <h1 class="text-white text-oswald-semibold text-4xl">MITRA KAMI</h1>
+            <p class="mt-2 text-grey-p theme-description">Perusahaan yang berkerja sama dengan Arminareka</p>
+        </div>
+        <div class="container flex">
+            <div class="w-1/5 mx-5 my-8">
+                <div class="mitra-img bca"></div>
+            </div>
+            <div class="w-1/5 mx-5 my-8">
+                <div class="mitra-img mandiri"></div>
+            </div>
+            <div class="w-1/5 mx-5 my-8">
+                <div class="mitra-img mandiri-syariah"></div>
+            </div>
+            <div class="w-1/5 mx-5 my-8">
+                <div class="mitra-img bni"></div>
+            </div>
+            <div class="w-1/5 mx-5 my-8">
+                <div class="mitra-img bri"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION MITRA -->
 
     <!-- this is the footer -->
     <footer class="pt-12 pb-8">
         <div class="container pt-4">
-            <div class="footer-top flex pb-8">
-                <div class="w-1/2" style="padding-right: 16rem;">
-                    <img src="assets/img/arminareka-logo.png" alt="" srcset="">
-                    <h3 class="text-blue-900 font-bold mt-8 mb-4 text-sm text-montserrat-semibold">PT. ARMINAREKA PERDANA (PUSAT)</h3>
+            <div class="footer-top flex flex-wrap pb-8">
+                <div class="w-full lg:w-1/2 xl:w-1/2 sm:pr-16rem md:pr-16rem lg:pr-16rem xl:pr-16rem">
+                    <img src="assets/img/arminareka-logo.png" alt="" srcset="" class="md:h-12">
+                    <h3 class="text-blue-900 font-bold mt-8 mb-4 text-sm text-montserrat-semibold">PT. ARMINAREKA
+                        PERDANA (PUSAT)</h3>
                     <p class="text-montserrat text-blue-800 text-sm pr-8">
                         GEDUNG MENARA SALEMBA LT.5 JALAN SALEMBA RAYA NO.5 JAKARTA PUSAT 10440 - SALEMBA
                     </p>
                 </div>
-                <div class="w-1/2">
-                    <div class="flex">
+                <div class="w-full lg:w-1/2 xl:w-1/2 mt-8 lg:mt-0 xl:mt-0">
+                    <div class="flex flex-wrap">
                         <div class="w-1/3 flex flex-col">
                             <a href="#!" class="text-blue-900 text-montserrat-semibold text-sm">HOME</a>
                             <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">TENTANG KAMI</a>
@@ -325,22 +1121,28 @@
                         </div>
                         <div class="w-2/3 flex flex-col">
                             <a href="#!" class="text-blue-900 text-montserrat-semibold text-sm">DAFTAR ONLINE</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CARA PENDAFTARAN</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">KONFIRMASI PEMBAYARAN</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEBERANGKATAN & PEMBAYARAN</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEB. HAJI PLUS & NO PORSI</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">REKENING PT. ARMINAREKA PERDANA</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CARA
+                                PENDAFTARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">KONFIRMASI
+                                PEMBAYARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEBERANGKATAN &
+                                PEMBAYARAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">CEK KEB. HAJI PLUS
+                                & NO PORSI</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">REKENING PT.
+                                ARMINAREKA PERDANA</a>
                             <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">FAQ</a>
-                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">SYARAT & KETENTUAN</a>
+                            <a href="#!" class="mt-3 text-blue-900 text-montserrat-semibold text-sm">SYARAT &
+                                KETENTUAN</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom flex pt-8 pb-4">
-                <div class="w-1/2">
-                    <div class="flex flex-col">
+            <div class="footer-bottom flex flex-wrap pt-8 pb-4">
+                <div class="w-full lg:w-1/2 xl:w-1/2">
+                    <div class="flex flex-col flex-wrap">
                         <h1 class="text-blue-900 text-lg text-montserrat-semibold">Informasi Pendaftaran</h1>
-                        <h1 class="text-white text-3xl text-montserrat-semibold">CALL 0878 - 9000 - 8810</h1>
+                        <h1 class="text-white text-xl sm:text-2xl md:text-3xl lg:5xl text-montserrat-semibold">CALL 0878 - 9000 - 8810</h1>
 
                         <div class="flex mt-8">
                             <a href="#!" class="w-8 h-8 flex justify-center align-center text-blue-900">
@@ -356,22 +1158,21 @@
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
-
-                        
                     </div>
                 </div>
-                <div class="w-1/2">
+                <div class="lg:w-1/2 xl:w-1/2 w-full mt-8 lg:mt-0 xl:mt-0">
                     <h1 class="text-blue-900 text-lg text-montserrat-semibold">BANK TRANSFER</h1>
 
-                    <div class="flex py-3 mb-12">
-                        <img src="assets/img/BCA.png" alt="" srcset="" class="h-6">
-                        <img src="assets/img/mandiri_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
-                        <img src="assets/img/mandiri_syariah_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
-                        <img src="assets/img/bni_logo_monochrome.png" alt="" srcset="" class="h-6 pl-3">
-                        <img src="assets/img/bri_blue_monochrome.png" alt="" srcset="" class="h-6 pl-3">
+                    <div class="flex flex-wrap py-3 mb-12">
+                        <img src="assets/img/BCA.png" alt="" srcset="" class="h-6 mt-3">
+                        <img src="assets/img/mandiri_blue_monochrome.png" alt="" srcset="" class="h-6 mt-3 pl-3">
+                        <img src="assets/img/mandiri_syariah_blue_monochrome.png" alt="" srcset="" class="h-6 mt-3 pl-3">
+                        <img src="assets/img/bni_logo_monochrome.png" alt="" srcset="" class="h-6 mt-3 pl-3">
+                        <img src="assets/img/bri_blue_monochrome.png" alt="" srcset="" class="h-6 mt-3 sm:pl-3 md:pl-3 lg:pl-3 xl:pl-3">
                     </div>
 
-                    <h1 class="text-blue-900 text-base text-montserrat-semibold">COPYRIGHT &copy; 1990 - 2019 - PT. ARMINAREKA PERDANA</h1>
+                    <h1 class="text-blue-900 text-sm text-center md:text-base lg:text-lg xl:text-lg md:text-left lg:text-left xl:text-left text-montserrat-semibold">COPYRIGHT &copy; 1990 - 2019 - PT.
+                        ARMINAREKA PERDANA</h1>
                 </div>
             </div>
         </div>
