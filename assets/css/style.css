@@ -82,7 +82,7 @@ div.hero-picture{
     width: 700px;
     height: 400px;
     object-fit: cover;
-    right: 0;
+    right: -209.5px;
 }
 div.hero-picture img{
     max-width:none;
@@ -290,9 +290,9 @@ div.category-separator{
 .bg-smart-wrapper{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -220px;
     z-index: -1;
-    width: 100%;
+    width: 139.05%;
     height: 100%;
     margin: 400px 0;
 }
@@ -305,7 +305,7 @@ div.category-separator{
 }
 
 .box-about-us{
-    height: 550px;
+    height: 650px;
     padding: 3.5rem !important;
 }
 
@@ -369,6 +369,10 @@ div.category-separator{
     color: #fff;
 }
 
+.mitra-wrapper{
+    padding: 25px 0 0 0;
+    margin-bottom: 80px;
+}
 .mitra-img{
     width: 150px;
     height: 100px;
@@ -376,19 +380,19 @@ div.category-separator{
     background-repeat: no-repeat;
 }
 .mitra-img.bca{
-    background-image: url(../img/mitra/bca.png);
+    background-image: url(../img/BCA.png);
 }
 .mitra-img.mandiri{
-    background-image: url(../img/mitra/mandiri.png);
+    background-image: url(../img/mandiri_blue_monochrome.png);
 }
 .mitra-img.mandiri-syariah{
-    background-image: url(../img/mitra/mandiri-syariah.png);
+    background-image: url(../img/mandiri_syariah_blue_monochrome.png);
 }
 .mitra-img.bni{
-    background-image: url(../img/mitra/bni.png);
+    background-image: url(../img/bni_logo_monochrome.png);
 }
 .mitra-img.bri{
-    background-image: url(../img/mitra/bri.png);
+    background-image: url(../img/bri_blue_monochrome.png);
 }
 
 .testimoni-text-p{
@@ -465,6 +469,19 @@ div.category-separator{
 .mx--30{
     margin: 0 -100px;
 }
+@media screen and (max-width: 1600px){
+    .about-us{
+        margin-top: 100px;
+    }
+    .box-about-us{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .about-us{
+        margin-top: 22px;
+    }
+}
 @media screen and (max-width: 1300px){
     div.hero-picture{
         width: 600px;
@@ -483,6 +500,21 @@ div.category-separator{
     div.hero-picture{
         width: 500px;
     }
+    .menu-block{
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 0 0 20px 0;
+        top: 60px;
+        left: 0;
+        position: absolute;
+        z-index: 9;
+        margin-left: 550px;
+        width: 200px;
+        display: none;
+    }
+    .nav-link{
+        color: #052E70;
+    }
 }
 @media screen and (max-width: 780px){
     .box-about-us{
@@ -498,10 +530,25 @@ div.category-separator{
     .menu-block, .hero-picture{
         display: none;
     }
+    .menu-block{
+        margin-left: 450px;
+    }
 }
 @media screen and (max-width: 640px){
     .mitra-img{
         width: 60px;
         height: 40px;
+    }
+    .menu-block{
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 520px){
+    .mitra-img{
+        width: 50px;
+        height: 40px;
+    }
+    .menu-block{
+        margin-left: 140px;
     }
 }

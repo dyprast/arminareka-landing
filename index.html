@@ -15,35 +15,37 @@
     <!-- navbar -->
     <nav class="py-5">
         <div class="nav-container container">
-            <div class="nav-content flex items-center justify-between flex-wrap">
+            <div class="nav-content flex items-center justify-between flex-wrap relative">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
-                    <img src="assets/img/arminareka-logo.png" class="nav-logo fill-current" alt="" srcset="">
+                    <a href="./">
+                        <img src="assets/img/arminareka-logo.png" class="nav-logo fill-current" alt="" srcset="">
+                    </a>
                 </div>
                 <div class="block lg:hidden md:block">
-                    <button
-                        class="flex items-center px-3 py-2 rounded text-teal-200 border-teal-400 hover:text-white">
-                        <i class="fas fa-stream"></i>
+                    <button class="flex items-center px-3 py-2 rounded text-teal-200 border-teal-400 hover:text-white" onclick="btnMenu()">
+                        <i id="btnMenuIA" class="fas fa-stream"></i>
+                        <i id="btnMenuIN" class="fas fa-times"></i>
                     </button>
                 </div>
-                <div class="menu-block md:hidden lg:block">
-                    <a href="#responsive-header"
+                <div id="menuBlock" class="menu-block md:hidden w-full xl:w-auto lg:w-auto lg:block">
+                    <a href="./tentang-kami.html"
                         class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Tentang Kami
                     </a>
-                    <a href="#responsive-header"
+                    <a href="./paket.html"
                         class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Paket <i class="fas fa-chevron-down pl-2"></i>
                     </a>
-                    <a href="#responsive-header"
+                    <a href="./berita.html"
                         class="nav-link block mt-4 text-orange-500 hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Berita
                     </a>
-                    <a href="#responsive-header"
+                    <a href="./galeri.html"
                         class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Galeri
                     </a>
-                    <a href="#responsive-header"
-                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-5">
+                    <a href="./kontak-kami.html"
+                        class="nav-link block mt-4 text-white hover:text-orange-300 lg:inline-block lg:mt-0 hover:text-white mx-6">
                         Kontak Kami
                     </a>
                 </div>
@@ -54,7 +56,7 @@
 
     <!-- section hero -->
     <section class="hero pt-3">
-        <div class="container flex mb-4" style="margin:0 auto">
+        <div class="container relative flex mb-4" style="margin:0 auto">
             <div class="lg:w-1/2 md:w-2/2 hero-desc">
                 <h1 class="hero-title text-white text-6xl pr-3 pb-5">IS SIMPLY DUMMY TEXT OF THE DAY</h1>
                 <p class="hero-description text-white">
@@ -92,7 +94,7 @@
     </section>
     <!-- END SECTION SEARCH ENGINE -->
 
-    <div class="relative">
+    <div class="relative container">
         <div class="bg-smart-wrapper xl:block hidden">
             <div class="bg-smart"></div>
         </div>
@@ -135,7 +137,7 @@
         <!-- END SECTION BENEFITS -->
 
         <!-- SECTION ABOUT US -->
-        <section class="about-us xl:mt-24 xl:mb-24 mt-0">
+        <section class="about-us xl:mb-24">
             <div class="container flex mb-4" style="margin: 0 auto">
                 <div class="w-2/5 xl:block hidden"></div>
                 <div class="xl:w-3/4 w-full">
@@ -1077,21 +1079,23 @@
             <h1 class="text-white text-oswald-semibold text-4xl">MITRA KAMI</h1>
             <p class="mt-2 text-grey-p theme-description">Perusahaan yang berkerja sama dengan Arminareka</p>
         </div>
-        <div class="container flex">
-            <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
-                <div class="mitra-img bca"></div>
-            </div>
-            <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
-                <div class="mitra-img mandiri"></div>
-            </div>
-            <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
-                <div class="mitra-img mandiri-syariah"></div>
-            </div>
-            <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
-                <div class="mitra-img bni"></div>
-            </div>
-            <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
-                <div class="mitra-img bri"></div>
+        <div class="mitra-wrapper bg-white">
+            <div class="container flex">
+                <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
+                    <div class="mitra-img bca"></div>
+                </div>
+                <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
+                    <div class="mitra-img mandiri"></div>
+                </div>
+                <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
+                    <div class="mitra-img mandiri-syariah"></div>
+                </div>
+                <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
+                    <div class="mitra-img bni"></div>
+                </div>
+                <div class="xl:w-1/5 lg:w-1/5 md:w-1/5 xl:px-5 lg:px-5 md:px-3 px-3 my-8">
+                    <div class="mitra-img bri"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -1178,6 +1182,24 @@
         </div>
     </footer>
     <!-- end of footer -->
+
+    <script>
+        document.getElementById('btnMenuIN').style.display = "none"
+        function btnMenu() {
+            var x = document.getElementById("menuBlock");
+            var icIA = document.getElementById("btnMenuIA") 
+            var icIN = document.getElementById("btnMenuIN") 
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                icIN.style.display = "none";
+                icIA.style.display = "block";
+            } else {
+                x.style.display = "block";
+                icIA.style.display = "none";
+                icIN.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
